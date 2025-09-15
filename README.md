@@ -10,14 +10,21 @@
 
 ## About Me
 
-I have just finished third semester as a Computer Science student at the University of Warsaw, Poland. I am currently seeking an internship or part-time job to gain real-world work experience. I have a strong interest in mathematics and algorithms, and I am a quick and adaptive learner.
+I am a Computer Science student at the University of Warsaw, currently after my third semester. I am eager to gain more professional experience and apply my knowledge of programming, algorithms, and systems to real-world problems. I enjoy both practical software development and the theoretical side of computer science, and I am a quick and adaptive learner.
 
 ## Education
 
-**University of Warsaw** | 2023 - Present  
-*Completed first year - Computer Science*
+**University of Warsaw** | 2023 – Present  
+*Completed first year – Computer Science*
 
-**XXXV High School in Warsaw** | 2019 - 2023
+**XXXV High School in Warsaw** | 2019 – 2023
+
+## Experience
+
+**Backend Software Engineering Intern** – Kalepa | July 2025 – September 2025  
+- Completed a 3-month internship focused on backend development.  
+- Assisted in developing internal tools and features.  
+- Collaborated in an agile team, gaining experience in code reviews, debugging, and testing.  
 
 ## Projects
 
@@ -25,16 +32,18 @@ My university projects are available on my GitHub: [github.com/matikasp](https:/
 
 ## Achievements
 
-- Participated in Hackarena 2.0 Hackathon
-- Finalist of the STEM competition organized by the Warsaw University of Technology during high school
+- Participated in Hackarena 2.0 Hackathon  
+- Finalist of the STEM competition organized by the Warsaw University of Technology during high school  
 
 ## Skills
 
-After completing my first three semesters of studies at the University, I have developed an understanding of programming languages such as: C/C++, NASM x86 Assembly, Java, and Python. I am also familiar with object-oriented (OOP) and imperative programming paradigms. Additionally, I possess knowledge of operating systems and computer architecture, and I have a solid understanding of fundamental algorithms and data structures. I also have an understanding of concurrent programming.
-
-Beyond practical programming skills, I am particularly drawn to theoretical computer science areas such as automata theory, formal languages, and computational complexity.
+- **Programming Languages:** C/C++, Java, Python, NASM x86 Assembly  
+- **Software & Tools:** Git, Linux, networking, concurrent programming  
+- **Systems:** Operating systems, computer architecture  
+- **Theoretical Computer Science:** Algorithms and data structures, automata theory, formal languages, computational complexity  
+- **Machine Learning:** Basic understanding of ML concepts and libraries (e.g., scikit-learn, NumPy, pandas)  
 
 ## Languages
 
-- **Polish:** Native
-- **English:** Fluent, B2 level, self-proclaimed
+- **Polish:** Native  
+- **English:** Fluent, B2 level (self-assessed)  
