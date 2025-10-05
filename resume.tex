@@ -8,42 +8,56 @@
 \usepackage{multicol} % multiple columns if needed
 \usepackage{tabularx} % table alignment
 
-\geometry{margin=0.8in}
-
+\geometry{margin=0.7in}
+\setlist[itemize]{left=0pt, noitemsep, topsep=2pt} % tighter item spacing
 \begin{document}
 
-\title{\vspace{-3cm}Curriculum Vitae}
-\author{Mateusz Kasprzak}
-\date{}
+\begin{center}
+    {\LARGE \textbf{Mateusz Kasprzak}} \\[2pt]
+    \href{mailto:mateuszkasprzak8@gmail.com}{mateuszkasprzak8@gmail.com} \,|\, 
+    +48 517 605 300 \,|\, 
+    \href{https://github.com/matikasp}{github.com/matikasp} \,|\, 
+    \href{https://linkedin.com/in/mmkasprzak}{linkedin.com/in/mmkasprzak}
+\end{center}
+\vspace{-6pt}
 
-\maketitle
-
-\section*{Contact Information}
-\begin{tabbing}
-\textbf{Name:} \hspace{2.1cm} Mateusz Kasprzak \\
-\textbf{Phone:} \hspace{2.0cm} +48 517 605 300 \\
-\textbf{Email:} \hspace{2.1cm} \href{mailto:mateuszkasprzak8@gmail.com}{mateuszkasprzak8@gmail.com} \\
-\textbf{GitHub:} \hspace{1.8cm} \href{https://github.com/matikasp}{github.com/matikasp} \\
-\textbf{LinkedIn:} \hspace{1.6cm} \href{https://linkedin.com/in/mmkasprzak}{linkedin.com/in/mmkasprzak}
-\end{tabbing}
 
 \section*{About Me}
 I am a Computer Science student at the University of Warsaw, currently completed my second Year. I am eager to gain more professional experience and apply my knowledge of programming, algorithms, and systems to real-world problems. I enjoy both practical software development and the theoretical side of computer science, and I am a quick and adaptive learner.
 
 \section*{Education}
-\textbf{University of Warsaw} | 2023 -- Present \\
+\textbf{University of Warsaw} \hfill 2023 -- Present \\
 \emph{Completed second year -- Computer Science}
 
 \section*{Experience}
-\textbf{Backend Software Engineering Intern} -- Kalepa | July 2025 -- September 2025
-\begin{itemize}[left=0pt]
-    \item Completed a 3-month internship focused on backend development.
-    \item Assisted in developing internal tools and implementing new features.
+\textbf{Backend Software Engineering Intern} — Kalepa \hfill Jul 2025 -- Sep 2025
+\begin{itemize}[left=0pt, noitemsep]
+    \item Three month internship in insurance-tech startup.
+    \item Worked on automation and data-processing tasks involving unstructured information.
+    \item Contributed to developing internal tools supporting large-scale information handling.
 \end{itemize}
 
 \section*{Projects}
-My university projects are available on my GitHub: \href{https://github.com/matikasp}{github.com/matikasp}.
+\textbf{Boolean Evaluator} \hfill (Concurrent Programming)
+\begin{itemize}[left=0pt, noitemsep]
+    \item Implemented a Boolean-expression parser and concurrent evaluator supporting batch evaluation and unit tests.
+    \item Focus on thread-safety and performance.
+\end{itemize}
 
+\textbf{Concurrent Optimization} \hfill (Concurrent Programming)
+\begin{itemize}[left=0pt, noitemsep]
+    \item Implemented and tuned concurrent algorithms/data-structures to reduce contention, improve parallel throughput and scalability.
+    \item Performed profiling-based optimizations and benchmarked scalability improvements.
+\end{itemize}
+
+\textbf{NAND Evaluator / Logic Simulator} \hfill (Computer Architecture)
+\begin{itemize}[left=0pt, noitemsep]
+    \item Built a NAND-based logic evaluator / simulator to model and verify combinational circuits and truth tables.
+    \item Demonstrates low-level programming and digital-logic understanding.
+\end{itemize}
+
+% Link to repo
+\small\textit{More projects and code:} \href{https://github.com/matikasp/University_Projects}{github.com/matikasp/University\_Projects}
 \section*{Achievements}
 \begin{itemize}[left=0pt]
     \item Participated in Hackarena 2.0 Hackathon
@@ -53,8 +67,8 @@ My university projects are available on my GitHub: \href{https://github.com/mati
 \section*{Skills}
 \begin{itemize}[left=0pt]
     \item \textbf{Programming Languages:} C/C++, Java, Python, NASM x86 Assembly
-    \item \textbf{Software \& Tools:} Git, Linux, networking, concurrent programming
-    \item \textbf{Systems:} Operating systems, computer architecture
+    \item \textbf{Software \& Tools:} Git, Linux, AWS, Flask, OpenAI API
+    \item \textbf{Systems:} Operating systems, computer architecture, computer networks, concurrent programming
     \item \textbf{Theoretical Computer Science:} Algorithms and data structures, automata theory, formal languages, computational complexity
     \item \textbf{Machine Learning:} Basic understanding of ML concepts and libraries (e.g., scikit-learn, NumPy, pandas)
 \end{itemize}
