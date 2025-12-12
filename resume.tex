@@ -1,76 +1,118 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage{geometry}
-\usepackage{hyperref}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{parskip} % better spacing between paragraphs
-\usepackage{enumitem} % better list control
-\usepackage{multicol} % multiple columns if needed
-\usepackage{tabularx} % table alignment
 
-\geometry{margin=0.7in}
-\setlist[itemize]{left=0pt, noitemsep, topsep=2pt} % tighter item spacing
+% --- UNIVERSAL PREAMBLE BLOCK ---
+\usepackage[a4paper, top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english]{babel}
+\babelprovide[import]{english}
+
+% Set default/Latin font to Sans Serif (Noto Sans)
+\babelfont{rm}{Noto Sans}
+
+% Load necessary packages
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% Formatting Sections
+\titleformat{\section}{\Large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Formatting Lists
+\setlist[itemize]{left=0pt, label=--, noitemsep, topsep=2pt, itemsep=1pt}
+
+% Colors for Links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+}
+
 \begin{document}
 
+%--- HEADER ---
 \begin{center}
-    {\LARGE \textbf{Mateusz Kasprzak}} \\[2pt]
-    \href{mailto:mateuszkasprzak8@gmail.com}{mateuszkasprzak8@gmail.com} \,|\, 
-    +48 517 605 300 \,|\, 
-    \href{https://github.com/matikasp}{github.com/matikasp} \,|\, 
+    {\huge \textbf{Mateusz Kasprzak}} \\[6pt]
+    \href{mailto:mateuszkasprzak8@gmail.com}{mateuszkasprzak8@gmail.com} \quad|\quad 
+    +48 517 605 300 \quad|\quad 
+    \href{https://github.com/matikasp}{github.com/matikasp} \quad|\quad 
     \href{https://linkedin.com/in/mmkasprzak}{linkedin.com/in/mmkasprzak}
 \end{center}
-\vspace{-6pt}
 
+\vspace{10pt}
 
-\section*{About Me}
-I am a Computer Science student at the University of Warsaw, currently completed my second Year. I am eager to gain more professional experience and apply my knowledge of programming, algorithms, and systems to real-world problems. I enjoy both practical software development and the theoretical side of computer science, and I am a quick and adaptive learner.
-
-\section*{Education}
-\textbf{University of Warsaw} \hfill 2023 -- Present \\
-\emph{Completed second year -- Computer Science}
-
-\section*{Experience}
-\textbf{Backend Software Engineering Intern} — Kalepa \hfill Jul 2025 -- Sep 2025
-\begin{itemize}[left=0pt, noitemsep]
-    \item Three month internship in insurance-tech startup.
-    \item Worked on automation and data-processing tasks involving unstructured information.
-    \item Contributed to developing internal tools supporting large-scale information handling.
+%--- EDUCATION ---
+\section{Education}
+\noindent
+\textbf{University of Warsaw} \hfill Warsaw, Poland \\
+\textit{B.Sc. in Computer Science} \hfill Oct 2023 -- Present
+\begin{itemize}
+    \item Currently in my 3rd year.
+    \item Focus on Algorithms, Systems, and Theoretical Computer Science.
 \end{itemize}
 
-\section*{Projects}
-\textbf{Boolean Evaluator} \hfill (Concurrent Programming)
-\begin{itemize}[left=0pt, noitemsep]
-    \item Implemented a Boolean-expression parser and concurrent evaluator supporting batch evaluation and unit tests.
-    \item Focus on thread-safety and performance.
+%--- RESEARCH EXPERIENCE ---
+\section{Research Experience}
+\noindent
+\textbf{Abstract Algebra Benchmark for LLMs} \hfill \textit{B.Sc. Thesis} \\
+\textit{Research Collaboration with Google DeepMind, MIT, and University of Toronto} \hfill Oct 2025 -- Present
+\begin{itemize}
+    \item Collaborating with researchers to develop a rigorous mathematical benchmark for Large Language Models.
+    \item Aiming to advance the capabilities of AI systems in genuine scientific discovery and formal reasoning.
+    \item Focus on abstract algebra and formal verification within AI contexts.
 \end{itemize}
 
-\textbf{Concurrent Optimization} \hfill (Concurrent Programming)
-\begin{itemize}[left=0pt, noitemsep]
-    \item Implemented and tuned concurrent algorithms/data-structures to reduce contention, improve parallel throughput and scalability.
-    \item Performed profiling-based optimizations and benchmarked scalability improvements.
+%--- EXPERIENCE ---
+\section{Experience}
+\noindent
+\textbf{Kalepa} \hfill Remote / Warsaw \\
+\textit{Backend Software Engineering Intern} \hfill Jul 2025 -- Sep 2025
+\begin{itemize}
+    \item Engineered automation and data-processing pipelines for an insurance-tech startup involving unstructured data.
+    \item Developed and optimized internal tools to support large-scale information handling and analysis.
+    \item Utilized Python and cloud infrastructure (AWS) to enhance backend system reliability.
 \end{itemize}
 
-\textbf{NAND Evaluator / Logic Simulator} \hfill (Computer Architecture)
-\begin{itemize}[left=0pt, noitemsep]
-    \item Built a NAND-based logic evaluator / simulator to model and verify combinational circuits and truth tables.
-    \item Demonstrates low-level programming and digital-logic understanding.
+%--- PROJECTS ---
+\section{Selected Projects}
+
+\noindent
+\textbf{High-Performance Concurrent Solver} \textit{-- C} \hfill \textit{Concurrent Programming}
+\begin{itemize}
+    \item Developed a highly optimized solution for a complex algorithmic problem, utilizing low-level memory management to minimize synchronization overhead.
+    \item Achieved near-linear scalability with thread count while maintaining performance parity with the sequential baseline on single-thread execution.
+    \item Ranked among the top solutions in the cohort for execution speed and efficiency.
 \end{itemize}
 
-% Link to repo
-\small\textit{More projects and code:} \href{https://github.com/matikasp/University_Projects}{github.com/matikasp/University\_Projects}
-\section*{Skills}
-\begin{itemize}[left=0pt]
-    \item \textbf{Programming Languages:} C/C++, Java, Python, NASM x86 Assembly
-    \item \textbf{Software \& Tools:} Git, Linux, AWS, Flask, OpenAI API
-    \item \textbf{Systems:} Operating systems, computer architecture, computer networks, concurrent programming
-    \item \textbf{Theoretical Computer Science:} Algorithms and data structures, automata theory, formal languages, computational complexity
-    \item \textbf{Machine Learning:} Basic understanding of ML concepts and libraries (e.g., scikit-learn, NumPy, pandas)
+\vspace{4pt}
+\noindent
+\textbf{Boolean Evaluator} \textit{-- Java} \hfill \textit{Concurrent Programming}
+\begin{itemize}
+    \item Designed a thread-safe Boolean-expression parser and evaluator supporting high-throughput batch processing.
+    \item Implemented rigorous unit testing and ensured concurrency safety using mutexes and atomic operations.
 \end{itemize}
 
-\section*{Languages}
-\begin{itemize}[left=0pt]
-    \item \textbf{Polish:} Native
-    \item \textbf{English:} Fluent, B2 level (self-assessed)
+\vspace{4pt}
+\noindent
+\textbf{NAND Logic Simulator} \textit{-- C} \hfill \textit{Computer Architecture}
+\begin{itemize}
+    \item Built a low-level logic simulator to model combinational circuits starting from NAND gates.
+    \item Verified complex truth tables and circuit designs, demonstrating deep understanding of digital logic.
+\end{itemize}
+
+\vspace{4pt}
+\noindent
+\small\textit{Full project portfolio available at:} \href{https://github.com/matikasp/University_Projects}{github.com/matikasp/University\_Projects}
+
+%--- SKILLS ---
+\section{Skills}
+\begin{itemize}
+    \item \textbf{Programming:} C, C++, Java, Python, NASM x86 Assembly.
+    \item \textbf{Tools \& Cloud:} Git, Linux, AWS, Flask, OpenAI API.
+    \item \textbf{Core Concepts:} Algorithms \& Data Structures, OS, Concurrency, Computer Architecture, Automata Theory.
+    \item \textbf{Languages:} Polish (Native), English (Advanced/C1).
 \end{itemize}
 
 \end{document}
